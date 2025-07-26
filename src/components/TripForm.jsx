@@ -15,7 +15,7 @@ const TripForm = ({ onDataReceived }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://127.0.0.1:8000/api/trip/", form);
+    const res = await axios.post("https://project-spotter.onrender.com/api/trip/", form);
     onDataReceived(res.data);
   };
 
